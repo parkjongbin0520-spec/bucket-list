@@ -8,6 +8,12 @@
 
 ---
 
+## **여**기서 P*a8e*를 확인**하세**요
+
+[우리 조 버킷릐ㅣㅣㅣ스트 아트 월](https://parkjongbin0520-spec.github.io/bucket-list/)
+
+---
+
 ### 개인 할 일
 
 카드 HTML만 **입맛에 맞게 수정**하면 되는 간단한 과제
@@ -17,9 +23,9 @@
 2. **버킷리스트** 내용을 채우고 `style` 속성을 추가해보세요 !
   
 3. upload file로 `이름_card.html` 형태로 깃허브에 업로드 해주세요 !
+  
 
-   
-  (초록색 `<>code` 왼 쪽에 `add file` 메뉴에서 `upload files`에서 올릴 수 있습니다)
+(초록색 `<>code` 왼 쪽에 `add file` 메뉴에서 `upload files`에서 올릴 수 있습니다)
 
 > **2가지 필수 구현**
 > 
