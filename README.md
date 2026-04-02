@@ -19,7 +19,7 @@
 3. upload file로 `이름_card.html` 형태로 깃허브에 업로드 해주세요 !
 
    
-  (초록색 `<code>` 왼 쪽에 `add file` 메뉴에서 `upload files`에서 올릴 수 있습니다)
+  (초록색 `<>code` 왼 쪽에 `add file` 메뉴에서 `upload files`에서 올릴 수 있습니다)
 
 > **2가지 필수 구현**
 > 
