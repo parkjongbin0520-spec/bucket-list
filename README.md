@@ -24,8 +24,8 @@
   
 3. upload file로 `이름_card.html` 형태로 깃허브에 업로드 해주세요 !
   
-
-(초록색 `<>code` 왼 쪽에 `add file` 메뉴에서 `upload files`에서 올릴 수 있습니다)
+  (초록색 `<>code` 왼 쪽에 `add file` 메뉴에서 `upload files`에서 올릴 수 있습니다)
+  
 
 > **2가지 필수 구현**
 > 
@@ -94,3 +94,17 @@ header {
 ```
 
 마우스를 올리면 포스트잇이 확대하고 `z-index` 로 레이어 우선 순위를 높임
+
+---
+
+## 변경 사항
+
+### 04.05. 팀장용 뼈대 코드에 클래스 추가
+
+> `.imgbadge:hover` //뱃지 호버 확대 및 기울기
+> 
+> transform: scale(1.1) rotate(5deg);
+> 
+> `.card:active .secret-memo` //카드 클릭 비밀 메모
+> 
+> visibility: visible !important;
