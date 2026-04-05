@@ -108,3 +108,5 @@ header {
 > `.card:active .secret-memo` //카드 클릭 비밀 메모
 > 
 > visibility: visible !important;
+>
+> <body> 배경 이미지 변경 및 <header> 어미 영역 추가 및 sticky 속성 추가
