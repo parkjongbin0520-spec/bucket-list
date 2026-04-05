@@ -79,12 +79,44 @@
         color: #2c3e50;
         font-size: 1.8rem;
         margin-bottom: 10px;
+        transition: transform 0.3s ease;
+      }
+      .card h2:hover {
+        color: #547190;
+        transform: scale(1.05);
+        font-size: 1.9rem;
       }
       .card p {
         color: #444;
         font-size: 1.3rem;
         text-align: left;
         line-height: 1.5;
+        transition: transform 0.3s ease;
+      }
+      .card p:hover {
+        color: #6b6b6b;
+        font-size: 1.4rem;
+        transform: translatex(5px);
+      }
+      .card .imgbadge:hover {
+        transform: scale(1.1) rotate(5deg);
+      }
+      .card:active h2 {
+        visibility: hidden;
+      }
+      .card:active p {
+        visibility: hidden;
+      }
+      .secret-memo {
+        color: #d38585;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 2px;
+        line-height: 1.5;
+      }
+      .card:active .secret-memo {
+        visibility: visible !important;
       }
     </style>
   </head>
@@ -95,10 +127,9 @@
         우리 조의 꿈들을 코르크 보드에 붙였습니다!
       </p>
     </header>
-    <main class="gallery-container clearfix">
-      <!-- 팀원 카드 시작 -->
+    <main class="gallery-container clearfix"></main>
+    <!-- 팀원카드 시작 -->
 
-      <!-- 팀원 카드 끝 -->
-    </main>
+    <!-- 팀원 카드 끝 -->
   </body>
 </html>
