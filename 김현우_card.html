@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>내 버킷리스트 카드</title>
+    <style>
+        /* 기본 카드 디자인 (자유롭게 수정 가능) */
+        .card {
+            width: 320px;
+            margin: 50px auto;
+            background: linear-gradient(135deg, #fffcf0 0%, #dfdfdf 100%);
+            padding: 15px 15px 35px 15px;
+            border-radius: 2px 2px 15px 5px;
+            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.247);
+            /* 배지의 기준점이 되기 위한 필수 속성 */
+            position: relative; 
+            transform: rotate(-3deg);
+        }
+        p{
+            color: #122131;
+        }
+        .hidden-text{
+            color: #a2c4ce;
+        }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 10px; }
+        .card h2 { color: #2c3e50; font-size: 1.5rem; margin-bottom: 5px; text-align: center;}
+        .card p { color: #444; font-size: 1.1rem; line-height: 1.5; font-weight: bold; padding-bottom: 10px; font-size: 20px;}
+        .card .hidden-text {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            padding: 0px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+
+        /* 1. 배지 (absolute) 관련 CSS를 작성하세요 */
+        
+
+        /* 2. 비밀 메모 (visibility) 및 hover 효과 관련 CSS를 작성하세요 */
+        .card:hover {
+            transform: scale(1.05) rotate(0deg);
+            z-index: 10;
+            border: 1px solid #f2ffa7;
+            box-shadow: 0 3px 20px #f2ffa7;
+        }
+        .card:hover .hidden-text {
+            opacity: 1;
+        }   
+
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="img\miemiaaa.webp" alt="바다 풍경">
+        
+        <h2>✨김현우의 꿈</h2>
+        <p>🛫 1. 해외에서 살아보기</p>
+        <p>🚗 2. 면허 따고 여행가기</p>
+        <p class="hidden-text">사실 영어 개못함</p>
+        
+        </div>
+    </body>
+</html>
