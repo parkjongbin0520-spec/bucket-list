@@ -51,65 +51,65 @@
         margin: 0 auto;
       }
 
-      /* 공통 카드 스타일 */
-      .card {
+      /* 카드 스타일 01 */
+       .card-01 {
         float: left;
-        width: 31.33%;
-        margin: 5%;
+        width: 300px;
+        margin: 1%;
         background: linear-gradient(135deg, #fffcf0 0%, #fff3b0 100%);
         padding: 15px 15px 35px 15px;
         border-radius: 2px 2px 15px 5px;
         box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.15);
-        position: relative; /* 자식인 badge의 기준점 */
+        position: relative; /* 자식인 badge-01의 기준점 */
         transform: rotate(-3deg);
         transition:
           transform 0.3s ease,
           z-index 0s;
       }
-      .card:hover {
+      .card-01:hover {
         transform: scale(1.05) rotate(0deg);
         z-index: 10;
       }
-      .card img {
+      .card-01 img {
         width: 100%;
         height: 200px;
         object-fit: cover;
         border-radius: 5px;
         margin-bottom: 15px;
       }
-      .card h2 {
+      .card-01 h2 {
         color: #2c3e50;
         font-size: 1.8rem;
         margin-bottom: 10px;
         transition: transform 0.3s ease;
       }
-      .card h2:hover {
+      .card-01 h2:hover {
         color: #547190;
         transform: scale(1.05);
         font-size: 1.9rem;
       }
-      .card p {
+      .card-01 p {
         color: #444;
         font-size: 1.3rem;
         text-align: left;
         line-height: 1.5;
         transition: transform 0.3s ease;
       }
-      .card p:hover {
+      .card-01 p:hover {
         color: #6b6b6b;
         font-size: 1.4rem;
         transform: translatex(5px);
       }
-      .card .imgbadge:hover {
+      .card-01 .imgbadge-01:hover {
         transform: scale(1.1) rotate(5deg);
       }
-      .card:active h2 {
+      .card-01:active h2 {
         visibility: hidden;
       }
-      .card:active p {
+      .card-01:active p {
         visibility: hidden;
       }
-      .secret-memo {
+      .secret-memo-01 {
         color: #d38585;
         font-size: 1.5rem;
         font-weight: bold;
@@ -117,9 +117,120 @@
         letter-spacing: 2px;
         line-height: 1.5;
       }
-      .card:active .secret-memo {
+      .card-01:active .secret-memo-01 {
         visibility: visible !important;
       }
+
+      /* 카드 스타일 02 */
+            .card-02 {
+               float: left;
+            width: 300px;
+            margin: 1%;
+            background: linear-gradient(135deg, #e0f7fa 0%, #fffde7 100%);
+            padding: 15px 15px 35px 15px;
+            border-radius: 2px 2px 15px 5px;
+            box-shadow: 3px 5px 15px rgba(0,0,0,0.15);
+
+            
+            position: relative; 
+        }
+
+        .card-02 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card-02 h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-02 p {
+            color: #444;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        
+        .badge-02 {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            border-radius: 10px;
+        }
+
+        
+        .secret-02 {
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.3s;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        
+        .card-02:hover .secret-02 {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* 카드 스타일 03 */
+            .card-03 {
+               float: left;
+            width: 320px;
+            margin: 1%;
+            background: linear-gradient(135deg, #fffcf0 0%, #dfdfdf 100%);
+            padding: 15px 15px 35px 15px;
+            border-radius: 2px 2px 15px 5px;
+            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.247);
+            /* 배지의 기준점이 되기 위한 필수 속성 */
+            position: relative; 
+            transform: rotate(-3deg);
+        }
+        p{
+            color: #122131;
+        }
+        .hidden-text-03{
+            color: #a2c4ce;
+        }
+        .card-03 img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; margin-bottom: 10px; }
+        .card-03 h2 { color: #2c3e50; font-size: 1.5rem; margin-bottom: 5px; text-align: center;}
+        .card-03 p { color: #444; font-size: 1.1rem; line-height: 1.5; font-weight: bold; padding-bottom: 10px; font-size: 20px;}
+        .card-03 .hidden-text-03 {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            padding: 0px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+
+        /* 1. 배지 (absolute) 관련 CSS를 작성하세요 */
+        
+
+        /* 2. 비밀 메모 (visibility) 및 hover 효과 관련 CSS를 작성하세요 */
+        .card-03:hover {
+            transform: scale(1.05) rotate(0deg);
+            z-index: 10;
+            border: 1px solid #f2ffa7;
+            box-shadow: 0 3px 20px #f2ffa7;
+        }
+        .card-03:hover .hidden-text-03 {
+            opacity: 1;
+        }  
+
+
     </style>
   </head>
   <body>
@@ -133,7 +244,83 @@
     </div>
     <main class="gallery-container clearfix"></main>
     <!-- 팀원카드 시작 -->
+     <!-- 카드 01 -->
+  <div class="card-01">
+      <!-- 스티커 뱃지 -->
+      <div
+        class="badge-01"
+        style="
+          position: absolute;
+          left: -30px;
+          top: -15px;
+          transform: rotate(15deg);
+        "
+      >
+        <img
+          class="imgbadge-01"
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHZ5BBGz5nVZhvgL06Ko-uGwoLgRx97-o6tJvU4l3ijHEso8O9SzoWX7XcyuJKlLBk6OiWcUWVio2mM8iV1YE3Swo53jmrSvQmT3NXRPzz5XfZMpyR9a8EtARYy4ZoyAACAoPWG6-aJaEg/s856/ofuro_drink_milk_man.png"
+          alt="마시는청년"
+          style="width: 100px; height: auto"
+        />
+      </div>
+      <!-- 카드 뱃지 2 -->
+      <div
+        class="badge-01"
+        style="
+          position: absolute;
+          left: 80%;
+          top: 65%;
+          transform: rotate(-10deg);
+        "
+      >
+        <img
+          class="imgbadge-01"
+          src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWeouqNBExYgKoajsCY6GzswFrqL8oTULMreJAs3fqv7U1zhE5E8rHKIy69B7UyhzZbeap090NZhHsfrLrhIwIHRa1B5vsBTvE6awafUns9eYawZh1zml5RT1F3c3oAK9GIMmiwalQ1uXK/s1600/camp_chairing_man.png"
+          alt="쉬는청년"
+          style="width: 110px; height: auto"
+        />
+      </div>
+      <!-- 카드 배경 이미지 -->
+      <img
+        src="https://cdn.pixabay.com/photo/2015/03/28/10/21/diet-695723_1280.jpg"
+        alt="샌드위치 캘리퍼스"
+      />
+      <h2>박종빈의 하고 싶은거</h2>
+      <p>1. 하루 1시간 이상 운동하기</p>
+      <p>2. 커스텀 기록 어플 만들기</p>
 
+      <div class="secret-memo-01" style="visibility: hidden">
+        피부도 좋아지고 싶다 !
+      </div>
+    </div>
+     <!-- 카드 02 -->
+ <div class="card-02">
+        
+        <div class="badge-02">✈️ 🚗</div>
+
+        
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500" alt="유럽">
+
+        
+        <h2>✨ 김민혁의 버킷리스트</h2>
+
+        
+        <p>✈️ 1. 유럽 여행 가기</p>
+        <p>🚗 2. 내 차 구매하기</p>
+
+        
+        <p class="secret-02">👉 사실 돈 없음 ㅎ </p>
+    </div>
+     <!-- 카드 03 -->
+      <div class="card-03">
+        <img src="https://cdn.pixabay.com/photo/2024/08/06/07/34/sea-8948636_1280.jpg" alt="바다 풍경">
+        
+        <h2>✨김현우의 꿈</h2>
+        <p>🛫 1. 해외에서 살아보기</p>
+        <p>🚗 2. 면허 따고 여행가기</p>
+        <p class="hidden-text-03">사실 영어 개못함</p>
+        
+        </div>
     <!-- 팀원 카드 끝 -->
   </body>
 </html>
