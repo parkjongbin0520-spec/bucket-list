@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>홍준기 버킷리스트 카드</title>
+    <style>
+        body {
+            background-color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            width: 320px;
+            background: linear-gradient(
+                180deg,
+                rgba(10, 25, 60, 0.9),
+                rgba(70, 130, 180, 0.7)
+            );
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 2px 4px 10px rgba(0,0,0,0.2);
+            position: relative;
+            color: #fff;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff4d4d;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .secret {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 5px;
+            visibility: hidden;
+        }
+
+        .card:hover .secret {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="badge">BUCKET LIST</div>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThKxlal3g7Lc4Z5bdfVJthNMUk66RkDWx_Dg&s" alt="느낌좋은 사진">
+
+        <h2>홍준기의 꿈</h2>    
+        <p>📚 1. 학점 3.5 이상 받기</p>
+        <p>✈️ 2. 해외여행 가기</p>
+        <p>💪 3. 헬스해서 몸 좋게 만들기</p>
+
+        <div class="secret">
+            🤫 사실 헬스 안한지 1년 넘음 
+        </div>
+    </div>
+
+</body>
+</html>
