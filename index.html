@@ -229,8 +229,67 @@
         .card-03:hover .hidden-text-03 {
             opacity: 1;
         }  
+/* 카드 스타일 04 */
+   .card-04 {
+            width: 300px;
+            margin: 50px auto;
+            background: linear-gradient(135deg, #fffcf0 0%, #fff3b0 100%);
+            padding: 15px 15px 35px 15px;
+            border-radius: 2px 2px 15px 5px;
+            box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.15);
+            /* 배지의 기준점이 되기 위한 필수 속성 */
+            position: relative;
+            visibility: visible;
+            box-shadow: 10px 10px 10px pink;
+        }
 
+        .card-04 img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
 
+        .card-04 h2 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card-04 p {
+            color: #444;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .card-04:hover {
+            transform: scale(1.05) rotate(0deg);
+            z-index: 10;
+        }
+
+        .card-04 .hidden-04 {
+            visibility: hidden-04;
+        }
+
+        .card-04:hover .hidden-04 {
+            visibility: visible;
+        }
+
+        .stk-04 {
+            box-sizing: border-box;
+            position: absolute;
+            height: 25px;
+            width: 40px;
+            left:-20px;
+            top: -10px;
+            padding: 0 auto;
+            margin: 0 auto;
+            background-color: pink;
+            border-radius: 10px;
+            text-align: center;
+            rotate:-10deg;
+        }
     </style>
   </head>
   <body>
@@ -321,6 +380,19 @@
         <p class="hidden-text-03">사실 영어 개못함</p>
         
         </div>
+
+    <!-- 카드 04 -->
+    <div class="card-04">
+        <img src="https://ak-d.tripcdn.com/images/0101r12000a5mkr6569CC_W_1440_810_Q80.webp?proc=source%2ftrip"
+            alt="일본 오사카 성">
+
+        <h2>✨ 이태윤 꿈</h2>
+        <p>⛩️ 1.일본 오사카 관광지 탐방</p>
+        <p>💻 2. 게임 프로젝트 참여 및 만들기</p>
+        <p class="hidden-04">노트북 사줘잉~</p>
+        <div class="stk-04">꼭!</div>
+
+    </div>
     <!-- 팀원 카드 끝 -->
   </body>
 </html>
